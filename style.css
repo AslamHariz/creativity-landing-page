@@ -47,6 +47,9 @@ nav .logo img {
   font-weight: 400;
 }
 
+nav .input{
+  display: none;
+}
 
 .left img {
   position: absolute;
@@ -186,4 +189,65 @@ nav .logo img {
   position: absolute;
   right: 50px;
   bottom: -30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .links::before{
+    display: none;
+  }
+
+  .links, .links span:first-child{
+    display: none;
+  }
+
+  nav .input{
+    display: flex;
+  }
+
+  .left img{
+    display:none;
+  }
+
+  .right .top .left{
+    margin-left: -200px;
+  }
+
+  .right .top .middle span{
+    margin-top: 130px;
+    margin-right: -150px;
+  }
+
+  .right .top .middle button{
+    margin-top: 100px;
+  }
+
+  .bottom .left{
+    top: 30%;
+    left: 15%;
+    color: #2f2f2f;
+  }
+
+  .bottom .right img{
+    margin-left: -350px;
+    margin-top: 150px;
+  }
+
+  .right .top .right{
+    top: 12%;
+  }
+
+  .right #quote{
+    display: none;
+  }
+
+  .bottom .right h4{
+    left: 20%;
+    top: 80%;
+  }
+
+  .arrow img{
+    top: 55%;
+    right: 5%;
+    height: 400px;
+  }
 }
